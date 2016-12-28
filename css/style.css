@@ -1,6 +1,9 @@
-
-body{
-	font-family: 'Raleway', sans-serif;
+.container{
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 1170px;
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: Arial, sans-serif;
 }
 
 .clearfix:after{
@@ -43,7 +46,6 @@ body{
 
 .headlines__text{
 	color: #606060;
-	font-family: Arial;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -58,18 +60,15 @@ header{
 	background-color: whitesmoke;
 }
 
-.container{
-
-	margin: 0 auto;
-	width: 1170px;
-}
-
-
-
 .logo{
 	float: left;
-	padding: 25px 0;
-
+	margin: 25px 0;
+	background: url(../images/logo_lomo.png) no-repeat;
+	width: 52px;
+	height: 52px;
+}
+.logo-text{
+	display: none;
 }
 
 .menu{
@@ -77,8 +76,11 @@ header{
 	padding: 50px 0;
 }
 
+.slicknav_menu{
+	display: none;
+}
+
 .menu-list{
-	font-family: Arial;
 	font-size: 13px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -110,7 +112,6 @@ header{
 }
 .studio-header{
 	color: #606060;
-	font-family: Arial;
 	font-size: 35px;
 	font-weight: 700;
 	padding-bottom: 20px;
@@ -118,7 +119,6 @@ header{
 
 .studio-text{
 	color: #606060;
-	font-family: Arial;
 	font-size: 25px;
 	font-weight: 400;
 }
@@ -138,7 +138,6 @@ header{
 	display: inline-block;
 	height: 48px;
 	line-height: 48px;
-	font-family: Arial;
 	font-weight: 500;
 	color: #606060;
 	background-color: rgba(255, 255, 255, 0.85);
@@ -188,7 +187,7 @@ header{
 	box-sizing: border-box;
 	margin: 3px;
 	border: 1px solid #e1e1e1;
-	height: 302px;
+	padding-bottom: 10px;
 	text-decoration: none;
 }
 .design-item__link:hover{
@@ -213,7 +212,6 @@ header{
 
 .design-item__link-text{
 	color: #7a7a7a;
-	font-family: Arial;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 25px;
@@ -255,7 +253,6 @@ header{
 .our-process__text{
 	color: #d0d0d0;
 	font-size: 14px;
-	font-family: Arial;
 	font-weight: 500;
 	line-height: 25px;
 	padding: 25px 150px 0;
@@ -313,9 +310,27 @@ header{
 	padding: 80px 0;
 }
 
+.project-type{
+	display: block;
+	text-align: center;
+	width: 31.6%;
+	margin-right: 2.11%;
+	float: left;
+	box-sizing: border-box;
+	
+}
+
+.project-type:last-child{
+	margin-right: 0;
+}
+/*
+.project-type__list{
+	width: 100%;
+	display: block;
+}
 .project-type__item{
 	float: left;
-	width: 370px;
+	width: 31.6%;
 	margin-right: 30px;
 }
 
@@ -325,21 +340,28 @@ header{
 
 .project-type__image-link{
 	margin-bottom: 20px;
+	display: inline-block;
+	width: 100%;
+}
+*/
+.project-type__img{
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
-.project-type__text-link{
+/*.project-type__text-link{
 	display: block;
 	text-decoration: none;
 	text-align: center;
 
-}
+}*/
 
-.project-type__text-link__head,
+/*.project-type__text-link__head,
 .project-type__text-link__subhead
-/*.project-type__text-link__text*/{
+.project-type__text-link__text{
 	display: block;
-}
+}*/
 
 .project-type__text-link__head{
 	color: #606060;
@@ -347,6 +369,7 @@ header{
 	font-weight: 700;
 	text-transform: uppercase;
 	padding-bottom: 12px;
+
 }
 
 .project-type__text-link__subhead{
@@ -374,6 +397,7 @@ header{
 .customer{
 	background: url("../images/customer.png") no-repeat;
 	padding: 80px 0 80px;
+	background-size: cover;
 }
 .headlines__text_white{
 	color: #d0d0d0;
@@ -406,9 +430,10 @@ header{
 
 .journal{
 	padding: 80px 0;
+	background-size: cover;
 }
 
-.journal-item{
+/*.journal-item{
 	float: left;
 	margin-right: 30px;
 	width: 370px;
@@ -422,6 +447,11 @@ header{
 .journal-link{
 	display: block;
 	text-decoration: none;
+}*/
+.journal-link__img{
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .journal-item__text-wrap{
@@ -488,7 +518,6 @@ header{
 
 footer{
 	background-color: #373737;
-	height: 300px;
 	padding: 70px 0 65px;
 }
 .footer-block{
